@@ -1,0 +1,88 @@
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo de los botones de acción */
+button:nth-of-type(2) {
+  background-color: #f44336;  /* Rojo para indicar el botón de cancelar */
+}
+
+button:nth-of-type(2):hover {
+  background-color: #e53935;  /* Rojo oscuro en hover */
+}
+
+/* Botón para ir al Dashboard */
+.dashboard-button {
+  background-color: #3b5998; /* Azul de Facebook */
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.dashboard-button:hover {
+  background-color: #2d4373; /* Azul oscuro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .appointments-list {
+    padding: 0;
+  }
+
+  .appointment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+}

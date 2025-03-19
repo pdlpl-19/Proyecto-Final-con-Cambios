@@ -1,0 +1,253 @@
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+$dark-bg: #222;
+$dark-text: #fff;
+$input-border: #ddd;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: $primary-color;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $input-border;
+        border-radius: 5px;
+    }
+}
+
+button {
+    background: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+
+    &:hover {
+        background: darken($primary-color, 10%);
+    }
+}
+
+.dashboard-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darken(#007bff, 10%);
+}
+
+.cancel-button {
+    background: #dc3545;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.dashboard-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashboard-button:hover {
+    background-color: #45a049;
+}
+
+/* ---------------------- Responsive Styles ---------------------- */
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .dashboard-container {
+        padding: 1rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashboard-button {
+        width: 100%;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .dashboard-container {
+        padding: 1.5rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dashboard-button {
+        width: 100%;
+    }
+
+    button {
+        padding: 9px;
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 400px;
+        padding: 2rem;
+    }
+
+    .dashboard-container {
+        max-width: 450px;
+        padding: 2rem;
+    }
+
+    .button-container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .dashboard-button {
+        width: auto;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
